@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutsDemo.RelativeLayoutPage">
+    <ContentPage.Content>
+        <!--POSICIONA LOS ELEMENTOS CON RESPECTO A SU CONTENEDOR PADRE O A OTROS ELEMENTOS-->
+        <RelativeLayout BackgroundColor="DarkRed">
+            <!--si no se asignan posiciones, los elementos se apilan uno sobre otro-->
+            <!--<Button Text="Click Me!" />
+            <Button Text="XAMARIN" />-->
+
+            <!--<Button
+                Text="Click Me!"
+                RelativeLayout.HeightConstraint="200"
+                RelativeLayout.WidthConstraint="200"
+                RelativeLayout.XConstraint="100"
+                RelativeLayout.YConstraint="50"
+            />-->
+
+            <!--<Button
+                Text="Click Me!"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=Constant, Constant=100}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=50}"
+            />-->
+            
+            <!--<Button
+                Text="Click Me!"
+                WidthRequest="250"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Constant=-250}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=Constant, Constant=50}"
+            />-->
+            
+            <Button
+                Text="Click Me!"
+                WidthRequest="250"
+                RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=btnXamarin, Property=X, Constant=110}"
+                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=btnXamarin, Property=Y}"
+            />
+            
+            <Button
+                Text="XAMARIN"
+                x:Name="btnXamarin"
+                RelativeLayout.XConstraint="50"
+                WidthRequest="100"
+            />
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -11,7 +11,11 @@ namespace LayoutsDemo
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new StackLayoutPage();
+            //MainPage = new AcrUserDialogsPage();
+            //MainPage = new StackLayoutPage();
+            //MainPage = new GridLayoutPage();
+            //MainPage = new AbsoluteLayoutPage();
+            MainPage = new RelativeLayoutPage();
         }
 
         protected override void OnStart()

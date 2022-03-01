@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutsDemo.GridLayoutPage">
+    <ContentPage.Content>
+        <!--<Grid RowSpacing="0" ColumnSpacing="0">
+            --><!--si no se asignan posiciones, los elementos se apilan uno sobre otro-->
+            <!--<Button Text="Click Me!" />
+            <Button Text="XAMARIN" />--><!--
+
+            <Grid.RowDefinitions>
+                --><!--<RowDefinition Height="100" />-->
+                <!--<RowDefinition Height="Auto" />--> <!--este valor se ajusta al HeightRequest del control -->
+                <!--<RowDefinition Height="*" />--> <!--este valor utiliza todo el espacio disponible a lo alto --><!--
+                <RowDefinition Height=".4*" /> --><!--40%--><!--
+                <RowDefinition Height=".5*" /> --><!--50%--><!--
+                <RowDefinition Height=".1*" /> --><!--10%--><!--
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            
+            <Button Text="Click Me!" BackgroundColor="Gray" HeightRequest="250" /> --><!-- por defecto es row = 0, column = 0 --><!--
+            <Button Text="XAMARIN" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Gray" />
+        </Grid>-->
+
+        <!--esta es la forma mas actrualizada para definir las filas y columnas-->
+        <Grid
+            RowDefinitions=".4*, .5*, .1*"
+            ColumnDefinitions="100, *"
+            RowSpacing="0"
+            ColumnSpacing="0"
+        >
+            <Button Text="Click Me!" BackgroundColor="Gray" HeightRequest="250" />
+            <!-- por defecto es row = 0, column = 0 -->
+            <Button Text="XAMARIN" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Gray" />
+        </Grid>
+
+
+
+    </ContentPage.Content>
+</ContentPage>

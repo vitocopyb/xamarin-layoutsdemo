@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace LayoutsDemo
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StackLayoutPage : ContentPage
+    public partial class GridLayoutPage : ContentPage
     {
-        public StackLayoutPage()
+        public GridLayoutPage()
         {
             InitializeComponent();
         }
-
     }
 }

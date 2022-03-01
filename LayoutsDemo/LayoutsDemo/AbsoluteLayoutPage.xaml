@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutsDemo.AbsoluteLayoutPage">
+    <ContentPage.Content>
+        <!--POSICIONA LOS ELEMENTOS CON RESPECTO A LA PANTALLA-->
+        <AbsoluteLayout BackgroundColor="DarkRed">
+            <!--si no se asignan posiciones, los elementos se apilan uno sobre otro-->
+            <!--<Button Text="Click Me!" />
+            <Button Text="XAMARIN" />-->
+            
+            <!--<Button Text="Click Me!" AbsoluteLayout.LayoutBounds="x, y, width, height" />-->
+            <!--<Button Text="Click Me!" AbsoluteLayout.LayoutBounds="0, 300, 250, 100" />-->
+
+            <!--
+            HeightProportional: proporcional al alto de la pantalla. El valor "height" van entre 0 y 1
+            -->
+            <!--<Button
+                Text="Click Me!"
+                AbsoluteLayout.LayoutBounds="0, 300, 250, .5"
+                AbsoluteLayout.LayoutFlags="HeightProportional" 
+            />-->
+            
+            <!--
+            SizeProportional: proporcional al ancho / alto de la pantalla. El valor width / height van entre 0 y 1
+            -->
+            <!--<Button
+                Text="Click Me!"
+                AbsoluteLayout.LayoutBounds="0, 300, 1, .5"
+                AbsoluteLayout.LayoutFlags="SizeProportional" 
+            />-->
+            
+            <!--
+            XProportional: proporcional al eje X de la pantalla. El valor x van entre 0 y 1
+            en este ejemplo se combina mas de un flags
+            -->
+            <!--<Button
+                Text="Click Me!"
+                AbsoluteLayout.LayoutBounds=".5, 300, .5, .5"
+                AbsoluteLayout.LayoutFlags="SizeProportional,XProportional" 
+            />-->
+            
+            <!--
+            All: proporcional con todos los flags. El valor x van entre 0 y 1
+            -->
+            <Button
+                Text="Click Me!"
+                AbsoluteLayout.LayoutBounds=".5, .5, .5, .5"
+                AbsoluteLayout.LayoutFlags="All" 
+            />
+
+            <Button Text="XAMARIN" />
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
