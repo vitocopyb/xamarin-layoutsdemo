@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutsDemo.StackLayoutPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" Spacing="0">
+            <Label Text="Welcome to Xamarin.Forms!" BackgroundColor="AliceBlue"  VerticalOptions="CenterAndExpand" HorizontalOptions="Start" />
+            <Label Text="Welcome to Xamarin.Forms!" BackgroundColor="DarkBlue"  VerticalOptions="CenterAndExpand" HorizontalOptions="End" />
+            <Label Text="Welcome to Xamarin.Forms!" BackgroundColor="DarkGray"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label Text="Welcome to Xamarin.Forms!" BackgroundColor="DarkGoldenrod"  VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+            <Label Text="Welcome to Xamarin.Forms!" BackgroundColor="DarkSeaGreen"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
