@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutsDemo.FlexLayoutPage">
+    <ContentPage.Content>
+        <FlexLayout
+            BackgroundColor="DarkRed"
+            Direction="Column"
+        >
+            <!--HEADER-->
+            <Label
+                Text="HEADER"
+                FontSize="Large"
+                BackgroundColor="Aqua"
+                HorizontalTextAlignment="Center"
+            />
+            
+            <!--BODY-->
+            <FlexLayout FlexLayout.Grow="1">
+                <!--CONTENT-->
+                <Label
+                    Text="CONTENT"
+                    FontSize="Large"
+                    BackgroundColor="Gray"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    FlexLayout.Grow="1"
+                />
+                
+                <!--NAVIGATION ITEMS-->
+                <BoxView
+                    FlexLayout.Basis="50"
+                    FlexLayout.Order="-1"
+                    Color="Blue"
+                />
+                
+                <!--ASIDE ITEMS-->
+                <BoxView
+                    FlexLayout.Basis="50"
+                    Color="Green"
+                />
+            </FlexLayout>
+            
+            <!--FOOTER-->
+            <Label
+                Text="FOOTER"
+                FontSize="Large"
+                BackgroundColor="Pink"
+                HorizontalTextAlignment="Center"
+            />
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

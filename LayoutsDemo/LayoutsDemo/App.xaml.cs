@@ -15,7 +15,10 @@ namespace LayoutsDemo
             //MainPage = new StackLayoutPage();
             //MainPage = new GridLayoutPage();
             //MainPage = new AbsoluteLayoutPage();
-            MainPage = new RelativeLayoutPage();
+            //MainPage = new RelativeLayoutPage();
+            //MainPage = new FlexLayoutPage();
+            //MainPage = new FramePage();
+            MainPage = new ScrollViewPage();
         }
 
         protected override void OnStart()

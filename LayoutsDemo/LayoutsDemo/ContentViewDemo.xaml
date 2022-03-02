@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutsDemo.ContentViewDemo">
+    <ContentView.Content>
+        <StackLayout Margin="15">
+            <Frame
+                BorderColor="DarkGray"
+                CornerRadius="50"
+            >
+                <Label
+                    Text="Welcome to Xamarin.Forms!"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"
+                />
+            </Frame>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
